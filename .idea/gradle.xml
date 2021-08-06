@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="testRunner" value="PLATFORM" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="1.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/SqlLite" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/asynchttp" />
+            <option value="$PROJECT_DIR$/broadcastReceiver" />
+            <option value="$PROJECT_DIR$/dialer" />
+            <option value="$PROJECT_DIR$/httpclient" />
+            <option value="$PROJECT_DIR$/httpclient2" />
+            <option value="$PROJECT_DIR$/listview" />
+            <option value="$PROJECT_DIR$/listviewsqlite" />
+            <option value="$PROJECT_DIR$/logindemo" />
+            <option value="$PROJECT_DIR$/logindemo1" />
+            <option value="$PROJECT_DIR$/lucencyapp" />
+            <option value="$PROJECT_DIR$/multdownload" />
+            <option value="$PROJECT_DIR$/sendsms" />
+            <option value="$PROJECT_DIR$/sms" />
+            <option value="$PROJECT_DIR$/websourceviewer" />
+            <option value="$PROJECT_DIR$/websourceviewer2" />
+            <option value="$PROJECT_DIR$/xnote" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

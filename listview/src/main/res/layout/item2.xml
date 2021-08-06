@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lo_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:rotationX="0"
+    android:rotationY="0">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:src="@drawable/xietingfeng" />
+
+    <TextView
+        android:id="@+id/tv_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/iv_icon"
+        android:text="谢霆锋王菲旧情复燃"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/iv_icon"
+        android:text="   谢霆锋和天后王菲的姐弟恋情轰动了整个娱
+        乐，2000年6月两人《花样年华》庆功宴后牵手离场
+        ，公开恋情，王菲更与谢霆锋在背部纹下情侣纹身..."
+        android:textColor="@color/teal_700"
+        android:textSize="13sp" />
+
+</RelativeLayout>

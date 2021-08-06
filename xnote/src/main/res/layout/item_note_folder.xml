@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_margin="10dp"
+    android:layout_height="60dp">
+
+
+    <ImageView
+        android:id="@+id/img_icon_folder"
+        android:layout_width="30dp"
+        android:layout_height="55dp"
+        android:src="@drawable/icon_folder"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="8">
+
+        <TextView
+            android:id="@+id/tv_folderName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:text="个人笔记"/>
+        <TextView
+            android:id="@+id/tv_isOpen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_weight="5"
+            android:text="公开"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_noteCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="right"
+        android:text="0"/>
+
+    <ImageView
+        android:layout_width="5dp"
+        android:layout_height="20dp"
+        android:src="@drawable/btn_to"
+        android:layout_gravity="center"
+        android:layout_weight="1"/>
+
+</LinearLayout>

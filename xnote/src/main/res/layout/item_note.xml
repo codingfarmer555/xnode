@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_icon_avatar"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/redius_background"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="张广贺"
+            android:textColor="#105CE3"
+            android:textSize="18sp"
+            android:layout_toEndOf="@id/img_icon_avatar"/>
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="08-04 45:45"
+            android:textColor="#616058"
+            android:textSize="12sp"
+            android:layout_toEndOf="@id/img_icon_avatar"
+            android:layout_below="@id/tv_username"
+            />
+
+        <TextView
+            android:id="@+id/tv_readCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="八人阅读"
+            android:textColor="#0D66D5"
+            android:textSize="12sp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/tv_time"
+            android:layout_alignBottom="@id/tv_time"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_noteTitle"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="笔记标题"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tv_noteContent"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="笔记标题内容呢日用Neri内容内容呢日用Neri内容内容呢日用Neri内容内容呢日用Neri内容内容呢日用Neri内容"
+        android:textSize="12sp"
+        android:lineHeight="22dp"
+        android:textColor="@color/black"
+        />
+
+<!--    <GridView-->
+<!--        android:layout_margin="8dp"-->
+<!--        android:id="@+id/jv_picture"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:rowCount="30"-->
+<!--        android:columnCount="12"-->
+<!--        tools:context=".MainActivity"/>-->
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/pic"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="3"
+        tools:context=".MainActivity">
+    </GridLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <LinearLayout
+            android:id="@+id/layout_comment"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="35dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_comment"/>
+            <TextView
+                android:id="@+id/tv_noteIssueCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="评论"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_favour"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="35dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_favour"/>
+            <TextView
+                android:id="@+id/tv_noteFavourCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="赞"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_transmit"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_transmit"/>
+            <TextView
+                android:id="@+id/tv_noteTransmitCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="转发"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

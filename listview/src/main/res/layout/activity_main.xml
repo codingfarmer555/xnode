@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#75AF89"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#CFB39D"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_gravity="bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   今日头条:    "
+            android:gravity="right"
+            android:layout_gravity="right"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_listview"
+        android:layout_width="match_parent"
+        android:layout_height="760dp"
+        android:layout_below="@+id/layout_top"
+        android:background="#CFB39D"
+        android:fastScrollEnabled="true" />
+
+    <LinearLayout
+        android:id="@+id/lineView1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/lv_listview"
+        android:background="#CFB39D"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="#CCECEBEF"
+            android:gravity="center"
+            android:text="首页"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#CCC2C1C5"
+            android:gravity="center"
+            android:text="新闻"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="#CCC2C1C5"
+            android:gravity="center"
+            android:text="我的"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <!--    <View-->
+    <!--        android:id="@+id/View"-->
+    <!--        android:layout_below="@id/lv_listview"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="130dp"-->
+    <!--        android:background="#66C347"/>-->
+
+</RelativeLayout>
